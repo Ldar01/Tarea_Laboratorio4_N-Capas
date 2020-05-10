@@ -28,14 +28,14 @@
 
 	<div class="container-contact100" style="background-image: url('images/bg-01.jpg');">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form" method="post" th:action="@{/formSeguridad}" th:object="${robot}">
+			<form class="contact100-form validate-form" method="post" th:action="@{/seguridad}" th:object="${robot}">
 				<span class="contact100-form-title">
-					Verificacion
+					Marcar solo si usted es un robot
 				</span>
 
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
 					<span class="label-input100" th:errors="*{soyRobot}"  style="color:#FF0000; font-size: 12px" ></span>
-					<input class="input100" th:value="${false}" th:field="*{soyRobot}" type="radio" name="soyRobot" placeholder="Marcar solo si usted es un robot">
+					<input class="input100" th:value="${false}" th:field="*{soyRobot}" type="radio" name="soyRobot" >
 				</div>
 
 				<div class="container-contact100-form-btn">
